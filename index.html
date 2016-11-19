@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title><title>Home-work JS 13-14 plus21-22</title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js2/tm.js"></script>
+    <script src="js2/script.js"></script>
+</head>
+<body>
+<div class="wrapp">
+    <div class="col-md-6 col-md-offset-3">
+        <h2 class="text-center">Simple test</h2>
+        <form class="form-block" id="formId">
+            <script type="text/template" id="template">
+                <% for (var i = 0; i < data.length; i++) { %>
+                <h4><strong><u><%= data[i].title %></u></strong></h4>
+                <div class="form-group">
+                    <label class="center-block"><input type="checkbox" id="<%= i+1 %>"><%= data[i].answers[0].answer %></label>
+                    <label class="center-block"><input type="checkbox" id="<%= i+1 %>"><%= data[i].answers[1].answer %></label>
+                    <label class="center-block"><input type="checkbox" id="<%= i+1 %>"><%= data[i].answers[2].answer %></label>
+                </div>
+                <% } %>
+            </script>
+            <button class="center-block btn btn-primary" id="check-results">Check!</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
+</body>
+</html>
+
+
+
